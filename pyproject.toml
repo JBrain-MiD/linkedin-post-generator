@@ -1,11 +1,10 @@
 [project]
-name = "python-template"
+name = "linkedin-post-generator"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
-requires-python = ">=3.11"
+description = "LinkedIn post generator using Streamlit and OpenAI"
+authors = [{ name = "Jacob Brain", email = "jacob@example.com" }]
 dependencies = [
-    "openai>=1.74.0",
-    "python-dotenv>=1.1.0",
-    "streamlit>=1.44.1",
+  "streamlit",
+  "openai"
 ]
+
