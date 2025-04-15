@@ -5,7 +5,8 @@ description = "Generate LinkedIn posts using Streamlit and OpenAI"
 authors = [{ name = "Jacob Brain", email = "jacob@example.com" }]
 dependencies = [
     "streamlit",
-    "openai"
+    "openai",
+    "python-dotenv"
 ]
 requires-python = ">=3.9"
 
