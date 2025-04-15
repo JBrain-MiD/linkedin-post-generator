@@ -1,0 +1,8 @@
+run = "streamlit run main.py"
+language = "python3"
+entrypoint = "main.py"
+modules = ["python-3.11"]
+
+[[ports]]
+localPort = 8503
+externalPort = 80
