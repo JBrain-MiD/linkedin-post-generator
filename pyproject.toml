@@ -1,10 +1,14 @@
 [project]
 name = "linkedin-post-generator"
 version = "0.1.0"
-description = "LinkedIn post generator using Streamlit and OpenAI"
+description = "Generate LinkedIn posts using Streamlit and OpenAI"
 authors = [{ name = "Jacob Brain", email = "jacob@example.com" }]
 dependencies = [
-  "streamlit",
-  "openai"
+    "streamlit",
+    "openai"
 ]
+requires-python = ">=3.9"
 
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
