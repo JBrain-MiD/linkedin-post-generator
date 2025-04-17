@@ -41,4 +41,3 @@ if st.button("Generate Post"):
             output = response.choices[0].message.content
             st.subheader("Generated Post")
             st.write(output)
-            st.code(output, language='markdown')
