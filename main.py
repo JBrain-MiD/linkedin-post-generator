@@ -10,7 +10,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Streamlit app config
 st.set_page_config(page_title="LinkedIn Post Generator", layout="centered")
-st.title("🧠 LinkedIn Post Generator")
+st.title("🧠's LinkedIn Post Generator")
 
 # UI inputs
 idea = st.text_area("What's the idea?", height=150)
