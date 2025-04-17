@@ -1,61 +1,38 @@
-# frameworks.py
-
 frameworks = [
     {
         "name": "Story Post",
-        "description": "Personal experience or internal lesson turned into a broader insight.",
-        "prompt_template": """
-You are Jacob Brain, a B2B marketing agency leader who writes concise, insight-driven LinkedIn posts to help marketers and business leaders operate better.
-
-Take this idea: "{idea}"
-
-Write a LinkedIn post in a story format:
-- Start with a short, tension-filled statement or realization.
-- Tell a personal or agency-related anecdote.
-- Use line breaks for pacing and clarity.
-- Deliver a clear takeaway or lesson in plain language.
-- Optional: Add a closing question to invite engagement.
-
-Write in Jacob's style: confident, reflective, no fluff, short paragraphs, with a tone that blends tactical insight and human understanding.
-Length: 200–300 words.
-"""
-    },
-    {
-        "name": "List Post",
-        "description": "Quick-hit, bullet-style insights or tactical guidance.",
-        "prompt_template": """
-You are Jacob Brain, a B2B marketing operator who writes punchy, useful LinkedIn posts that are meant to be saved and shared by leaders.
-
-Take this idea: "{idea}"
-
-Write a LinkedIn post in a list format:
-- Start with a hook that states the problem or common misconception.
-- Write a short paragraph explaining the stakes or context.
-- Then break the insight into 3–5 bullet points, each with a 1–2 sentence explanation.
-- End with a short paragraph that ties it together and makes a simple call to action or reflective close.
-
-Tone should be tactical, clear, and focused on helping people operate better.
-Use strong verbs. Avoid fluff.
-Length: 150–250 words.
-"""
+        "prompt_template": "Write a first-person story-style LinkedIn post based on this idea:\n\n\"{idea}\"\n\nMake it relatable and authentic. Include moments of struggle or realization, and end with a key takeaway. Use natural, conversational language."
     },
     {
         "name": "Prediction Post",
-        "description": "Forward-looking commentary or contrarian insight on industry change.",
-        "prompt_template": """
-You are Jacob Brain, a marketing strategist who helps B2B leaders make sense of change and move faster than the market.
-
-Take this idea: "{idea}"
-
-Write a LinkedIn post in a prediction format:
-- Open with a bold, slightly contrarian claim.
-- Use short, spaced lines to build the case step-by-step.
-- Reference the practical implications (what this means for marketers or leaders).
-- Speak directly to the reader. Assume they're smart, but distracted.
-- End with either encouragement or a challenge to take action or rethink assumptions.
-
-Keep the structure tight. Use plain language and short paragraphs. Punchy.
-Length: 175–300 words.
-"""
+        "prompt_template": "Write a LinkedIn post in a confident tone making predictions based on this idea:\n\n\"{idea}\"\n\nFrame it as a clear future state. Highlight why it matters now. Speak to B2B marketers and founders. Keep it sharp and authoritative."
+    },
+    {
+        "name": "List Post",
+        "prompt_template": "Write a list-style LinkedIn post based on this idea:\n\n\"{idea}\"\n\nStart with a short paragraph setting up the problem. Then write 3-5 concise, valuable bullet points. End with a call to action or closing thought. Make it useful and skimmable."
+    },
+    {
+        "name": "Question Post",
+        "prompt_template": "Write a thought-provoking LinkedIn post in the form of a question based on this idea:\n\n\"{idea}\"\n\nStart with a bold or unexpected question. Use the body to expand on the tension behind the question. Invite discussion in the comments."
+    },
+    {
+        "name": "Tactical Playbook",
+        "prompt_template": "Write a tactical, how-to style LinkedIn post based on this idea:\n\n\"{idea}\"\n\nFrame it as a short playbook for B2B marketers. Focus on practical steps, clear benefits, and actionable advice. Keep it tight and immediately useful."
+    },
+    {
+        "name": "Before/After",
+        "prompt_template": "Write a before/after style LinkedIn post based on this idea:\n\n\"{idea}\"\n\nContrast the old way with the new way. Use short, punchy sections to draw the difference. Close with a takeaway about the shift and its significance."
+    },
+    {
+        "name": "Rant Post",
+        "prompt_template": "Write a passionate, opinionated LinkedIn post based on this idea:\n\n\"{idea}\"\n\nStart with a bold statement. Let the tone be direct but not disrespectful. Share frustrations, point out a broken system, or challenge lazy thinking. Wrap it with a constructive insight or solution."
+    },
+    {
+        "name": "Lessons Learned",
+        "prompt_template": "Write a lessons-learned style LinkedIn post based on this idea:\n\n\"{idea}\"\n\nFrame it as something you learned the hard way. Be honest about the mistake or realization. Share 2-3 insights or changes that came from it. Speak to other operators or founders who might relate."
+    },
+    {
+        "name": "One Line",
+        "prompt_template": "Turn this idea into a single-sentence LinkedIn post that punches above its weight:\n\n\"{idea}\"\n\nMake it bold, original, and slightly polarizing. Avoid cliches. Keep it under 30 words."
     }
 ]
